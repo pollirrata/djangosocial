@@ -5,7 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^Twitter/$','twitter.views.index'),
+    url(r'^Twitter/(?P<query>\w)/$','twitter.views.index'),
     # Examples:
     # url(r'^$', 'DjangoSocial.views.home', name='home'),
     # url(r'^DjangoSocial/', include('DjangoSocial.DjangoSocial.urls')),
